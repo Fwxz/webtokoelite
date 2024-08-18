@@ -1,0 +1,149 @@
+/* Informasi produk di kiri */
+.product-info-left {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  max-width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-info-left h2,
+.product-info-left h3 {
+  margin: 0;
+  color: #e74c3c;
+}
+
+.product-info-left p {
+  margin: 5px 0 0;
+  color: #333;
+}
+
+/* Detail Produk */
+.product-details {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-details h1 {
+  font-size: 24px;
+  color: #333;
+  margin-top: 0;
+}
+
+.store-location {
+  color: #999;
+  margin: 10px 0;
+}
+
+.price {
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+.discounted-price {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 10px;
+}
+
+.discount {
+  margin-left: 10px;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.quantity label {
+  margin-right: 10px;
+}
+
+.quantity input {
+  width: 50px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.add-to-cart {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.add-to-cart:hover {
+  transform: scale(1.05);
+}
+
+.seller-info {
+  margin-top: 20px;
+  color: #555;
+}
+
+.product-description {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-description h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-description p {
+  margin: 0;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Media query untuk tampilan tablet */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .product-info-left {
+    bottom: 20px;
+    left: 20px;
+    max-width: calc(100% - 40px);
+  }
+
+  .product-details {
+    padding: 15px;
+  }
+}
+
+/* Media query untuk tampilan mobile */
+@media (max-width: 767px) {
+  .product-info-left {
+    position: static;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+
+  .product-details {
+    padding: 10px;
+  }
+}
