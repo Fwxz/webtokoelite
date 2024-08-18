@@ -8,6 +8,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  font-family: MyCustomFont;
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -18,7 +19,7 @@ body {
 
 @font-face {
   font-family: 'MyCustomFont';
-  src: url('asset/font/Poppins/Poppins-Black.ttf') format('ttf');
+  src: url('asset/font/Poppins/Poppins-Black.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
