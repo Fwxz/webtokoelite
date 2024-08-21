@@ -41,4 +41,3 @@ document.addEventListener('DOMContentLoaded', () => {
     toast.show();
 });
 
-
