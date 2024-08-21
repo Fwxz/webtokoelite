@@ -883,6 +883,23 @@ footer .contact-us img:hover {
 
 
 /* Pop Up  */
+.toast-container {
+  position: sticky;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 1050;
+}
+
+.toast-header img {
+  width: 40px; /* Atur ukuran gambar sesuai kebutuhan */
+  height: 40px;
+  object-fit: cover;
+}
+
+.toast {
+  width: 300px; /* Atur lebar toast sesuai kebutuhan */
+}
+
 .popup {
   display: none;
   position: fixed;
